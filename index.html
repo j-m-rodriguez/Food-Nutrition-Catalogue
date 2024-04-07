@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>Nutritional Database | Home</title>
+    <meta name="description" content="A Catalog of nutritional information for common foods">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
 </head>
@@ -15,7 +15,7 @@
     <div id="card-container">
         
     </div>
-    <div class="card" style="display: none;">
+    <div class="card" onclick="removeLastCard();" style="display: none;">
         <div class="card-content">
             <h2>TV Show Title</h2>
             <img src="" alt="TV Show Poster">
@@ -27,8 +27,8 @@
         </div>
     </div>
     <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
+        <button onclick="removeAllCards();">
+            Remove All Cards
         </button>
         <button onclick="removeLastCard();">
             Remove A Card!
