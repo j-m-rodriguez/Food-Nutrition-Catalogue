@@ -1,6 +1,7 @@
 import category_url from './Data/square_images.json' assert {type: 'json' };
-import titles from './Data/categories.json' assert { type: 'json' };
+import categories from './Data/categories.json' assert { type: 'json' };
 import data from './Data/BasicMacros.json' assert { type: 'json'};
+let titles = categories
 
 // defining Food class with name, all macro content, and category of food
 class Food {
