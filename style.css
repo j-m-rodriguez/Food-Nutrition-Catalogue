@@ -18,10 +18,19 @@ body {
     color: white;
 }
 
+.subtitle {
+    text-align: center;
+    margin: 0;
+    color:white;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #card-container {
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 .card {
@@ -33,7 +42,7 @@ body {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 10px;
     font-family: "Verdana";
     color: #777;
     cursor: pointer;
@@ -42,7 +51,7 @@ body {
 .card-content h2 {
     text-align: center;
     margin-top: 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .card img {
