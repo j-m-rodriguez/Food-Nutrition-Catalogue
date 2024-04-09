@@ -81,6 +81,13 @@ function removeAllCards() {
     showCards();
 }
 
+function removeSelectedCard(card) {
+    const cardToRemove = card.querySelector("h2").textContent;
+    const index = titles.indexOf(cardToRemove);
+    titles.splice(index, 1);
+    showCards();
+}
+
 // gets a list of all products in the supplied category
 function displayCategory(category) {
     let displaylist = [];
@@ -99,7 +106,9 @@ window.removeLastCard = function() {
 window.removeAllCards = function() {
     removeAllCards();
 }
-
+window.removeSelectedCard = function(card) {
+    removeSelectedCard(card);
+}
 function selectCategory() {
     
 }
