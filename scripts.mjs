@@ -16,9 +16,12 @@ const jsonfood = data["FoundationFoods"]
 let foodlist = []
 console.log(jsonfood)
 for (let entry of jsonfood) {
-    let food = new Food(entry["description"], entry["foodNutrients"], entry["foodCategory"])
+    let food = new Food(entry["description"], entry["foodNutrients"], entry["foodCategory"]["description"])
     foodlist.push(food)
 }
+
+// empty array to put food items on display
+let displaylist = []
 
 
 // Your final submission should have much more data than this, and 
@@ -32,7 +35,7 @@ function showCards() {
     const templateCard = document.querySelector(".card");
     
     for (let title of titles) {
-        let imageURL = category_url[title]
+        let imageURL = category_url[title];
         
         console.log(imageURL);
         const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -77,6 +80,17 @@ function removeAllCards() {
     showCards();
 }
 
+// gets a list of all products in the supplied category
+function displayCategory(category) {
+    let displaylist = [];
+    for (let food in foodlist){
+        if (foodlist[food].category == category){
+            displaylist.push(foodlist[food]);
+            console.log(foodlist[food].name);
+        }
+    }
+}
+
 // made the functions accessible globally because they were not working in ES6 format
 window.removeLastCard = function() {
     removeLastCard();
@@ -88,3 +102,11 @@ window.removeAllCards = function() {
 function selectCategory() {
     
 }
+
+
+/** To-do List
+ * analyze how information is stored/displayed in Food class and foodlist to see if anything should revised before continuing
+ * add content to function selectCategory()
+ * figure out how to get string of the category from card that is clicked
+ * display food and contents
+ */
