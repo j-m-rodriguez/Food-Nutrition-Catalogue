@@ -1,36 +1,25 @@
-/**
- * Data Catalog Project Starter Code - SEA Stage 2
- *
- * This file is where you should be doing most of your work. You should
- * also make changes to the HTML and CSS files, but we want you to prioritize
- * demonstrating your understanding of data structures, and you'll do that
- * with the JavaScript code you write in this file.
- * 
- * The comments in this file are only to help you learn how the starter code
- * works. The instructions for the project are in the README. That said, here
- * are the three things you should do first to learn about the starter code:
- * - 1 - Change something small in index.html or style.css, then reload your 
- *    browser and make sure you can see that change. 
- * - 2 - On your browser, right click anywhere on the page and select
- *    "Inspect" to open the browser developer tools. Then, go to the "console"
- *    tab in the new window that opened up. This console is where you will see
- *    JavaScript errors and logs, which is extremely helpful for debugging.
- *    (These instructions assume you're using Chrome, opening developer tools
- *    may be different on other browsers. We suggest using Chrome.)
- * - 3 - Add another string to the titles array a few lines down. Reload your
- *    browser and observe what happens. You should see a fourth "card" appear
- *    with the string you added to the array, but a broken image.
- * 
- */
+import category_url from './Data/square_images.json' assert {type: 'json' };
+import titles from './Data/categories.json' assert { type: 'json' };
+import data from './Data/BasicMacros.json' assert { type: 'json'};
 
-// importing array of food categories as "titles" and 
-// object of category and image url as "category_url"
-import links from './Data/square_images.json' assert { type: 'json' };
-import categories from './Data/categories.json' assert { type: 'json' };
-let titles = categories
-let category_url = links
-console.log(titles);
-console.log(category_url);
+// defining Food class with name, all macro content, and category of food
+class Food {
+    constructor(name, nutrients, category) {
+        this.name = name;
+        this.nutrients = nutrients;
+        this.category = category;
+    }
+}
+
+// creating an array of Food class objects of every entry from json data
+const jsonfood = data["FoundationFoods"]
+let foodlist = []
+console.log(jsonfood)
+for (let entry of jsonfood) {
+    let food = new Food(entry["description"], entry["foodNutrients"], entry["foodCategory"])
+    foodlist.push(food)
+}
+
 
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
@@ -49,6 +38,7 @@ function showCards() {
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, imageURL); // Edit title and image
         cardContainer.appendChild(nextCard); // Add new card to the     container
+        console.log(nextCard)
     }
 }
 
@@ -93,4 +83,8 @@ window.removeLastCard = function() {
 }
 window.removeAllCards = function() {
     removeAllCards();
+}
+
+function selectCategory() {
+    
 }

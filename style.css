@@ -36,13 +36,13 @@ body {
 .card {
     width: 300px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 5px;
 }
 
 .card-content {
-    padding: 10px;
+    padding: 0px;
     font-family: "Verdana";
     color: #777;
     cursor: pointer;
@@ -50,7 +50,7 @@ body {
 
 .card-content h2 {
     text-align: center;
-    margin-top: 0;
+    margin-top: 10;
     font-size: 15px;
 }
 
