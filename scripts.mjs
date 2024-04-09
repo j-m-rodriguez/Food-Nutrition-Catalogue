@@ -46,6 +46,23 @@ function showCards() {
     }
 }
 
+
+// function to display food
+function showFood() {
+    console.log("showFood function called");
+    const foodGrid = document.getElementById("food-grid");
+    foodGrid.innerHTML = ""; // Clear previous content
+
+    displaylist.forEach(food => {
+        console.log("Adding food to grid:", food.name);
+
+        const foodItem = document.createElement("div");
+        foodItem.textContent = food.name; // Displaying only the food name for now
+
+        foodGrid.appendChild(foodItem);
+    });
+}
+
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
 
@@ -81,6 +98,8 @@ function removeAllCards() {
     showCards();
 }
 
+// removes only the card clicked on
+// used to test that category selector was working; not for actual implementation
 function removeSelectedCard(card) {
     const cardToRemove = card.querySelector("h2").textContent;
     const index = titles.indexOf(cardToRemove);
@@ -89,14 +108,17 @@ function removeSelectedCard(card) {
 }
 
 // gets a list of all products in the supplied category
-function displayCategory(category) {
-    let displaylist = [];
+function selectCategory(card) {
+    const category = card.querySelector("h2").textContent;
+    displaylist = [];
     for (let food in foodlist){
         if (foodlist[food].category == category){
             displaylist.push(foodlist[food]);
             console.log(foodlist[food].name);
         }
     }
+    removeAllCards();
+    showFood();
 }
 
 // made the functions accessible globally because they were not working in ES6 format
@@ -109,8 +131,8 @@ window.removeAllCards = function() {
 window.removeSelectedCard = function(card) {
     removeSelectedCard(card);
 }
-function selectCategory() {
-    
+window.selectCategory = function(card) {
+    selectCategory(card);
 }
 
 
