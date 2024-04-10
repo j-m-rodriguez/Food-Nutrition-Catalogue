@@ -12,8 +12,8 @@ body {
 .title {
     text-align: center;
     margin: 0;
-    font-size: 7em;
-    font-family: "Helvetica";
+    font-size: 6em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: normal;
     color: white;
 }
