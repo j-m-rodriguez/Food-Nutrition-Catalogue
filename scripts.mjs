@@ -45,20 +45,49 @@ function showCards() {
         console.log(nextCard)
     }
 }
+//
+// trying to write it myself first
+/*
+function showFood() {
+    const foodContainer = document.getElementById("food-container");
+    foodContainer.innterHTML = "";
+    const templateFood = document.querySelector(".food");
 
+    for (let food in displaylist) {
+        let foodName = displaylist[food].name;
+        let foodInfo = displaylist[food].nutrients;
+
+        const nextfood = templateFood.cloneNode(true);
+        foodContainer.appendChild(nextFood);
+    }
+}
+*/
 
 // function to display food
 function showFood() {
-    console.log("showFood function called");
     const foodGrid = document.getElementById("food-grid");
     foodGrid.innerHTML = ""; // Clear previous content
 
     displaylist.forEach(food => {
-        console.log("Adding food to grid:", food.name);
-
         const foodItem = document.createElement("div");
-        foodItem.textContent = food.name; // Displaying only the food name for now
+        foodItem.classList.add("food-item");
 
+        const nameElement = document.createElement("h3");
+        nameElement.textContent = food.name;
+        foodItem.appendChild(nameElement);
+
+        const table = document.createElement("table");
+
+        // Add rows for each nutrient
+        food.nutrients.forEach(nutrient => {
+            const row = table.insertRow();
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            cell1.textContent = nutrient.nutrient.name;
+            cell2.textContent = nutrient.amount + " " + nutrient.nutrient.unitName;
+        });
+
+        foodItem.appendChild(table);
         foodGrid.appendChild(foodItem);
     });
 }
@@ -137,8 +166,5 @@ window.selectCategory = function(card) {
 
 
 /** To-do List
- * analyze how information is stored/displayed in Food class and foodlist to see if anything should revised before continuing
- * add content to function selectCategory()
- * figure out how to get string of the category from card that is clicked
  * display food and contents
  */

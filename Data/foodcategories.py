@@ -37,7 +37,10 @@ category_url = {}
 for each in food_categories:
     category_url[each] = urls[i]["image"]
     i += 1
+# do not need to edit these files
+""""
 with open("categories.json", "w") as fp:
     json.dump(food_categories, fp, indent=4)
 with open("square_images.json", "w") as fp:
     json.dump(category_url, fp, indent=4)
+"""
