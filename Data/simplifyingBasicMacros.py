@@ -54,5 +54,9 @@ for food in data:
 
 print(len(data), "total food items after")
 
+for food in data:
+    sorted_list_of_dicts = sorted(food["foodNutrients"], key=lambda x: x["nutrient"]["number"], reverse=True)
+    food["foodNutrients"] = sorted_list_of_dicts
+
 with open("stripped_macros.json", "w") as outfile:
     json.dump({"FoundationFoods": data}, outfile, indent=4)
