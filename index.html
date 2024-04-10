@@ -10,11 +10,18 @@
 
 <body>
     <header class="main-header">
-        <h1 class="title">Nutritional Database</h1>
-        <h2 class="subtitle"> Select a category to view nutritional information</h2>
+        <h1 class="title" id="title">Nutritional Database</h1>
+        <h2 class="subtitle" id="subtitle"> Select a category to view nutritional information</h2>
         <div>
             <button class="button" id="view-all" onclick="showAll();">View All</button>
         </div>
+        <h3 class="subtitle" id="sort-by" style="text-align: left; display: none;">Sort by:</h3>
+        <button class="sorting-button" onclick="sortName()" style="display: none;">Name</button>
+        <button class="sorting-button" onclick="sortCalories();" style="display: none;">Calories</button>
+        <button class="sorting-button" onclick="sortCarbs();" style="display: none;">Carbs</button>
+        <button class="sorting-button" onclick="sortFat();" style="display: none;">Total Fat</button>
+        <button class="sorting-button" onclick="sortProtein();" style="display: none;">Protein</button>
+        <button class="button" id="back" onclick="back();" style="display: none;">Back</button>
     </header>
     <div id="card-container">
         

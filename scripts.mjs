@@ -46,33 +46,19 @@ function showCards() {
         console.log(nextCard)
     }
 }
-//
-// trying to write it myself first
-/*
-function showFood() {
-    const foodContainer = document.getElementById("food-container");
-    foodContainer.innterHTML = "";
-    const templateFood = document.querySelector(".food");
-
-    for (let food in displaylist) {
-        let foodName = displaylist[food].name;
-        let foodInfo = displaylist[food].nutrients;
-
-        const nextfood = templateFood.cloneNode(true);
-        foodContainer.appendChild(nextFood);
-    }
-}
-*/
 
 // function to display food
-function showFood() {
+function showFood(list) {
     const foodGrid = document.getElementById("food-grid");
     foodGrid.innerHTML = ""; // Clear previous content
+
+    const subtitle = document.getElementById("subtitle");
+    subtitle.innerHTML = "All nutrition content is based on 100 grams of food";
 
     const table = document.createElement("table");
     const foodItem = document.createElement("div");
 
-    displaylist.forEach(food => {
+    list.forEach(food => {
         
         // can remove these 3 lines if I don't want header
 
@@ -89,6 +75,15 @@ function showFood() {
         foodItem.appendChild(table);
         foodGrid.appendChild(foodItem);
     });
+    const buttons = document.getElementsByClassName("sorting-button");
+    [...buttons].forEach(button => {
+        button.style.display = "inline";
+    });
+    const sortText = document.getElementById("sort-by");
+    sortText.style.display = "inline";
+
+    const backbutton = document.getElementById("back");
+    backbutton.style.display = "flex";
 }
 
 function editCardContent(card, newTitle, newImageURL) {
@@ -146,10 +141,12 @@ function selectCategory(card) {
         }
     }
     removeAllCards();
-    showFood();
+    const webTitle = document.getElementById("title");
+    webTitle.innerHTML = category
+    showFood(displaylist);
 }
 
-function alphabetical(a, b) {
+function sortName(a, b) {
     // Compare the names and return the result
     if (a.name < b.name) {
         return -1; // 'a' comes before 'b'
@@ -160,7 +157,7 @@ function alphabetical(a, b) {
     }
 }
 
-function alphabeticalReverse(a, b) {
+function sortNameReverse(a, b) {
     // Compare the names and return the result
     if (a.name < b.name) {
         return 1; // 'b' comes before 'a'
@@ -173,9 +170,54 @@ function alphabeticalReverse(a, b) {
 
 // show list of all food items sorted alphabetically by default
 function showAll() {
-    displaylist.sort(alphabetical);
+    displaylist = foodlist
+    displaylist.sort(sortName);
     removeAllCards();
-    showFood();
+    showFood(displaylist);
+}
+
+function back() {
+    location.reload();
+}
+
+function sortCalories(a, b) {
+    if (a.nutrients[0]["amount"] < b.nutrients[0]["amount"]) {
+        return -1;
+    } else if (a.nutrients[0]["amount"] > b.nutrients[0]["amount"]){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function sortCarbs(a, b) {
+    if (a.nutrients[1]["amount"] < b.nutrients[1]["amount"]) {
+        return -1;
+    } else if (a.nutrients[1]["amount"] > b.nutrients[1]["amount"]){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function sortFat(a, b) {
+    if (a.nutrients[2]["amount"] < b.nutrients[2]["amount"]) {
+        return -1;
+    } else if (a.nutrients[2]["amount"] > b.nutrients[2]["amount"]){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function sortProtein(a, b) {
+    if (a.nutrients[3]["amount"] < b.nutrients[3]["amount"]) {
+        return 1;
+    } else if (a.nutrients[3]["amount"] > b.nutrients[3]["amount"]){
+        return -1;
+    } else {
+        return 0;
+    }
 }
 
 // made the functions accessible globally because they were not working after changing html type="module"
@@ -193,4 +235,19 @@ window.selectCategory = function(card) {
 }
 window.showAll = function() {
     showAll();
+}
+window.sortCalories = function() {
+    showFood(displaylist.sort(sortCalories));
+}
+window.sortCarbs = function() {
+    showFood(displaylist.sort(sortCarbs));
+}
+window.sortFat = function() {
+    showFood(displaylist.sort(sortFat));
+}
+window.sortProtein = function() {
+    showFood(displaylist.sort(sortProtein));
+}
+window.back = function() {
+    back();
 }
