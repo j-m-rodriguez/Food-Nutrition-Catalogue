@@ -93,27 +93,6 @@
                         }
                     },
                     "amount": 14.9
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2219814,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 13.9
                 }
             ],
             "foodCategory": {
@@ -1005,27 +984,6 @@
                     "min": 3.1,
                     "median": 4.25,
                     "amount": 4.52
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2232258,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 34.0
                 }
             ],
             "foodCategory": {
@@ -1521,27 +1479,6 @@
                     "min": 0.07,
                     "median": 0.25,
                     "amount": 0.27
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2236458,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 9.87
                 }
             ],
             "foodCategory": {
@@ -1641,27 +1578,6 @@
                     "min": 20.1,
                     "median": 20.8,
                     "amount": 21.0
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2236855,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 14.9
                 }
             ],
             "foodCategory": {
@@ -1761,27 +1677,6 @@
                     "min": 7.31,
                     "median": 9.22,
                     "amount": 9.43
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2238551,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 44.8
                 }
             ],
             "foodCategory": {
@@ -1980,27 +1875,6 @@
                         }
                     },
                     "amount": 5.3
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2241752,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 6.39
                 }
             ],
             "foodCategory": {
@@ -2079,27 +1953,6 @@
                     "min": 0.8,
                     "median": 1.01,
                     "amount": 1.06
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2242729,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 12.0
                 },
                 {
                     "type": "FoodNutrient",
@@ -2220,27 +2073,6 @@
                     "min": 0.82,
                     "median": 1.1,
                     "amount": 1.06
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2243613,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 9.42
                 }
             ],
             "foodCategory": {
@@ -3034,27 +2866,6 @@
                     "min": 7.66,
                     "median": 8.06,
                     "amount": 8.06
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2254458,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 12.0
                 }
             ],
             "foodCategory": {
@@ -3451,27 +3262,6 @@
                     "min": 0.88,
                     "median": 1.44,
                     "amount": 1.41
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2261086,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 7.31
                 }
             ],
             "foodCategory": {
@@ -3652,27 +3442,6 @@
                 },
                 {
                     "type": "FoodNutrient",
-                    "id": 2263122,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 4.32
-                },
-                {
-                    "type": "FoodNutrient",
                     "id": 2263141,
                     "nutrient": {
                         "id": 1005,
@@ -3769,27 +3538,6 @@
                     "min": 5.12,
                     "median": 5.88,
                     "amount": 5.79
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2264159,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 67.9
                 },
                 {
                     "type": "FoodNutrient",
@@ -4405,27 +4153,6 @@
                         }
                     },
                     "amount": 15.8
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2270400,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 15.4
                 }
             ],
             "foodCategory": {
@@ -4525,27 +4252,6 @@
                         }
                     },
                     "amount": 31.5
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2270994,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 30.7
                 }
             ],
             "foodCategory": {
@@ -4645,27 +4351,6 @@
                     "min": 11.3,
                     "median": 12.1,
                     "amount": 12.3
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 2273208,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 39.2
                 }
             ],
             "foodCategory": {
@@ -5365,27 +5050,6 @@
                         }
                     },
                     "amount": 7.92
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8514452,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 7.79
                 }
             ],
             "foodCategory": {
@@ -5782,27 +5446,6 @@
                     "min": 0.59,
                     "median": 0.91,
                     "amount": 0.92
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8514907,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 62.8
                 }
             ],
             "foodCategory": {
@@ -5902,27 +5545,6 @@
                     "min": 1.02,
                     "median": 1.25,
                     "amount": 1.24
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8514982,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 3.0
                 }
             ],
             "foodCategory": {
@@ -6022,27 +5644,6 @@
                     "min": 0.01,
                     "median": 0.18,
                     "amount": 0.18
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8515045,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 8.69
                 }
             ],
             "foodCategory": {
@@ -6142,27 +5743,6 @@
                         }
                     },
                     "amount": 11.8
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8515102,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 10.6
                 }
             ],
             "foodCategory": {
@@ -6460,27 +6040,6 @@
                         }
                     },
                     "amount": 25.5
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8515442,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 23.0
                 }
             ],
             "foodCategory": {
@@ -6679,27 +6238,6 @@
                     "min": 0.1,
                     "median": 0.2,
                     "amount": 0.19
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8515669,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 5.66
                 }
             ],
             "foodCategory": {
@@ -7690,27 +7228,6 @@
                     "min": 1.54,
                     "median": 2.57,
                     "amount": 2.57
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8524360,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 3.8
                 }
             ],
             "foodCategory": {
@@ -8107,27 +7624,6 @@
                         }
                     },
                     "amount": 0.96
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 8530363,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 0.2
                 }
             ],
             "foodCategory": {
@@ -9912,27 +9408,6 @@
                         }
                     },
                     "amount": 20.1
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 13336931,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 18.0
                 }
             ],
             "foodCategory": {
@@ -10032,27 +9507,6 @@
                     "min": 0.0,
                     "median": 0.14,
                     "amount": 0.29
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 13337433,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 21.2
                 }
             ],
             "foodCategory": {
@@ -10152,27 +9606,6 @@
                         }
                     },
                     "amount": 61.8
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 21115675,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 14.3
                 }
             ],
             "foodCategory": {
@@ -10272,27 +9705,6 @@
                         }
                     },
                     "amount": 64.7
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 21115678,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 15.4
                 }
             ],
             "foodCategory": {
@@ -10392,27 +9804,6 @@
                         }
                     },
                     "amount": 61.0
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 21115681,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 13.9
                 }
             ],
             "foodCategory": {
@@ -10512,27 +9903,6 @@
                         }
                     },
                     "amount": 58.9
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 21115684,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 13.2
                 }
             ],
             "foodCategory": {
@@ -10632,27 +10002,6 @@
                         }
                     },
                     "amount": 60.0
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 21115687,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 14.1
                 }
             ],
             "foodCategory": {
@@ -11346,27 +10695,6 @@
                         }
                     },
                     "amount": 26.6
-                },
-                {
-                    "type": "FoodNutrient",
-                    "id": 26845143,
-                    "nutrient": {
-                        "id": 1050,
-                        "number": "205.2",
-                        "name": "Carbohydrate, by summation",
-                        "rank": 1120,
-                        "unitName": "g"
-                    },
-                    "foodNutrientDerivation": {
-                        "code": "AS",
-                        "description": "Summed",
-                        "foodNutrientSource": {
-                            "id": 1,
-                            "code": "1",
-                            "description": "Analytical or derived from analytical"
-                        }
-                    },
-                    "amount": 1.56
                 }
             ],
             "foodCategory": {

@@ -1,6 +1,6 @@
 import category_url from './Data/square_images.json' assert {type: 'json' };
 import categories from './Data/categories.json' assert { type: 'json' };
-import data from './Data/BasicMacros.json' assert { type: 'json'};
+import data from './Data/stripped_macros.json' assert { type: 'json'};
 let titles = categories
 
 // defining Food class with name, all macro content, and category of food
@@ -12,6 +12,7 @@ class Food {
     }
 }
 
+
 // creating an array of Food class objects of every entry from json data
 const jsonfood = data["FoundationFoods"]
 let foodlist = []
@@ -22,7 +23,7 @@ for (let entry of jsonfood) {
 }
 
 // empty array to put food items on display
-let displaylist = []
+let displaylist = foodlist
 
 
 // Your final submission should have much more data than this, and 
@@ -68,25 +69,23 @@ function showFood() {
     const foodGrid = document.getElementById("food-grid");
     foodGrid.innerHTML = ""; // Clear previous content
 
+    const table = document.createElement("table");
+    const foodItem = document.createElement("div");
+
     displaylist.forEach(food => {
-        const foodItem = document.createElement("div");
-        foodItem.classList.add("food-item");
+        
+        // can remove these 3 lines if I don't want header
 
-        const nameElement = document.createElement("h3");
-        nameElement.textContent = food.name;
-        foodItem.appendChild(nameElement);
 
-        const table = document.createElement("table");
+        //const table = document.createElement("table");
+        const row = table.insertRow();
+        const cell = row.insertCell(0);
+        cell.textContent = food.name
 
-        // Add rows for each nutrient
-        food.nutrients.forEach(nutrient => {
-            const row = table.insertRow();
-            const cell1 = row.insertCell(0);
-            const cell2 = row.insertCell(1);
-            cell1.textContent = nutrient.nutrient.name;
-            cell2.textContent = nutrient.amount + " " + nutrient.nutrient.unitName;
-        });
-
+        for (let i = 0; i < 4; i++) {
+            const cell = row.insertCell(i+1);
+            cell.textContent = food.nutrients[i].amount + " " + food.nutrients[i].nutrient.unitName;
+        }
         foodItem.appendChild(table);
         foodGrid.appendChild(foodItem);
     });
@@ -150,7 +149,36 @@ function selectCategory(card) {
     showFood();
 }
 
-// made the functions accessible globally because they were not working in ES6 format
+function alphabetical(a, b) {
+    // Compare the names and return the result
+    if (a.name < b.name) {
+        return -1; // 'a' comes before 'b'
+    } else if (a.name > b.name) {
+        return 1; // 'b' comes before 'a'
+    } else {
+        return 0; // names are equal
+    }
+}
+
+function alphabeticalReverse(a, b) {
+    // Compare the names and return the result
+    if (a.name < b.name) {
+        return 1; // 'b' comes before 'a'
+    } else if (a.name > b.name) {
+        return -1; // 'a' comes before 'b'
+    } else {
+        return 0; // names are equal
+    }
+}
+
+// show list of all food items sorted alphabetically by default
+function showAll() {
+    displaylist.sort(alphabetical);
+    removeAllCards();
+    showFood();
+}
+
+// made the functions accessible globally because they were not working after changing html type="module"
 window.removeLastCard = function() {
     removeLastCard();
 }
@@ -163,8 +191,6 @@ window.removeSelectedCard = function(card) {
 window.selectCategory = function(card) {
     selectCategory(card);
 }
-
-
-/** To-do List
- * display food and contents
- */
+window.showAll = function() {
+    showAll();
+}

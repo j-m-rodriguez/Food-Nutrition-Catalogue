@@ -45,10 +45,13 @@ print("\nDone with Calories")
 for food in data:
     nutrient_list = []
     for nutrient_entry in food["foodNutrients"]:
+        if nutrient_entry["nutrient"]["name"] == "Carbohydrate, by summation":
+            food["foodNutrients"].remove(nutrient_entry)
         nutrient_list.append(nutrient_entry["nutrient"]["name"])
     if BASIC_NUTRIENTS[1] not in nutrient_list:
         print(food)
         data.remove(food)
+
 print(len(data), "total food items after")
 
 with open("stripped_macros.json", "w") as outfile:
