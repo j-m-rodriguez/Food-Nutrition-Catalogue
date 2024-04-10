@@ -58,6 +58,25 @@ function showFood(list) {
     const table = document.createElement("table");
     const foodItem = document.createElement("div");
 
+    const row = table.insertRow();
+    const cell0 = row.insertCell(0);
+    const cell1 = row.insertCell(1);
+    const cell2 = row.insertCell(2);
+    const cell3 = row.insertCell(3);
+    const cell4 = row.insertCell(4);
+    cell0.textContent = "Food Description"
+    cell1.textContent = "Calories"
+    cell2.textContent = "Carbs"
+    cell3.textContent = "Total Fat"
+    cell4.textContent = "Protein"
+    const cells = [cell0, cell1, cell2, cell3, cell4];
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].style.fontWeight = 'bold';
+    }
+
+
+
+
     list.forEach(food => {
         
         // can remove these 3 lines if I don't want header
@@ -172,6 +191,8 @@ function sortNameReverse(a, b) {
 function showAll() {
     displaylist = foodlist
     displaylist.sort(sortName);
+    const webTitle = document.getElementById("title");
+    webTitle.innerHTML = "Viewing All Foods"
     removeAllCards();
     showFood(displaylist);
 }
@@ -212,9 +233,9 @@ function sortFat(a, b) {
 
 function sortProtein(a, b) {
     if (a.nutrients[3]["amount"] < b.nutrients[3]["amount"]) {
-        return 1;
-    } else if (a.nutrients[3]["amount"] > b.nutrients[3]["amount"]){
         return -1;
+    } else if (a.nutrients[3]["amount"] > b.nutrients[3]["amount"]){
+        return 1;
     } else {
         return 0;
     }
@@ -235,6 +256,9 @@ window.selectCategory = function(card) {
 }
 window.showAll = function() {
     showAll();
+}
+window.sortName = function() {
+    showFood(displaylist.sort(sortName))
 }
 window.sortCalories = function() {
     showFood(displaylist.sort(sortCalories));
